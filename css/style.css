@@ -1,0 +1,33 @@
+/*вспомогательные классы*/
+
+/*чтобы картинки не уходили за границы*/
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/*Класс для того, чтобы контейнер float разметки "видел" их */
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+/*КОНЕЦ Вспомогательны классы*/
+
+body {
+    /*позиционирование*/
+    /*блочная модель*/
+    /*типографика*/
+    
+    font-family: "Tahoma", sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 18px;
+    /*оформление*/
+    
+    background-color: #ffffff;
+    color: #000000;
+    /*анимация*/
+    /*разное*/
+}

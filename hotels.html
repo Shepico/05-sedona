@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Hotels-Sedona</title>
+    <link rel="stylesheet" href="css/normalize.min.css">
+    
+    <link rel="stylesheet" href="css/style.css">
+    <!--Разкоментиовать когда будет готов минимальный файл-->
+    <!--<link rel="stylesheet" href="css/style.min.css">-->
+  </head>
+  <body>
+    <header>
+      <nav> 
+        <ul class="head-menu">
+          <li><a href="#">Информация</a></li>
+          <li><a href="#">Фото и видео</a></li>
+          <li><a href="#">Карта штата</a></li>
+          <li><a href="#">Гостиницы</a></li>
+        </ul>
+      </nav>          
+    </header>
+    <main>
+    <form class="main-filter" action="#" method="post">
+      <fieldset class="mf-group mf-infrastructure"> 
+        <legend>Инфрраструктура:</legend>
+        
+        <input type="checkbox" name="mfi-pool" checked>
+        <label for="mfi-pool">Бассейн</label>
+        
+        <input type="checkbox" name="mfi-parking">
+        <label for="mfi-parking">Парковка</label>
+        
+        <input type="checkbox" name="mfi-wifi">
+        <label for="mfi-wifi">Wi-fi</label>        
+      </fieldset>     
+      
+      <fieldset class="mf-group mf-housingtype"> 
+        <legend>Тип жилья:</legend>
+        
+        <input type="checkbox" name="mfi-hotel" checked>
+        <label for="mfi-hotel">Гостиница</label>
+        
+        <input type="checkbox" name="mfi-motel" checked>
+        <label for="mfi-motel">Мотель</label>
+        
+        <input type="checkbox" name="mfi-apartment" checked>
+        <label for="mfi-apartment">Апартаменты</label>        
+      </fieldset>     
+      
+      <fieldset class="mf-group mf-other"> 
+        <legend>Стоимость в сутки (р):</legend>
+        <input type="text" name="mfi-number-min">
+        <input type="text" name="mfi-number-max">        
+        
+        <input type="range" min="0" max="5000" value="3000" name="mfi-costday">        
+        <button>Показать</button>
+      </fieldset>          
+    </form>
+    <div class="main-found">
+      <div class="main-found-head">
+        <span class="mf-found-item">Найдено:3</span>
+        <div class="mf-sorting">
+          Сортировка:
+          <ul class="mf-sorting-list">
+            <li>По цене</li>
+            <li>По типу</li>
+            <li>По рейтингу</li>            
+          </ul>          
+        </div> 
+        <div class="mf-topdown">    
+          <button class="btn-sort btn-sort-up">Вверх</button>
+          <button class="btn-sort btn-sort-down">Вниз</button>
+        </div>
+      
+      </div>
+      <!------item found--->
+      <div class="main-found-item">
+        <div class="mf-item-image"></div>
+        <div class="mf-item-text">
+          <div class="mfit-h2">Amara resort & spa</div>
+          <div class="mfit-content">
+            <b>Гостиница</b>
+            <b class="mfit-content-cost">от 3500 р.</b>
+          </div>
+          <div class="mfit-button">
+            <a href="#" class="btn mfit-more">Подробнее</a>
+            <a href="#" class="btn mfit-reserve">Забронировать</a>
+          </div>
+        </div>
+        <div class="mf-item-rating">
+          <div class="mfi-rating-star"></div>
+          <div class="mfi-rating-text">рейтинг:8,5</div>
+        </div>
+      </div>
+      <!------item found--->
+      <div class="main-found-item">
+        <div class="mf-item-image"></div>
+        <div class="mf-item-text">
+          <div class="mfit-h2">Desert quail inn</div>
+          <div class="mfit-content">
+            <b>Мотель</b>
+            <b class="mfit-content-cost">от 2000 р.</b>
+          </div>
+          <div class="mfit-button">
+            <a href="#" class="btn mfit-more">Подробнее</a>
+            <a href="#" class="btn mfit-reserve">Забронировать</a>
+          </div>
+        </div>
+        <div class="mf-item-rating">
+          <div class="mfi-rating-star"></div>
+          <div class="mfi-rating-text">рейтинг:8,9</div>
+        </div>
+      </div>
+      <!------item found--->
+      <div class="main-found-item">
+        <div class="mf-item-image"></div>
+        <div class="mf-item-text">
+          <div class="mfit-h2">Villas at poco diablo</div>
+          <div class="mfit-content">
+            <b>Апартаменты</b>
+            <b class="mfit-content-cost">от 4000 р.</b>
+          </div>
+          <div class="mfit-button">
+            <a href="#" class="btn mfit-more">Подробнее</a>
+            <a href="#" class="btn mfit-reserve">Забронировать</a>
+          </div>
+        </div>
+        <div class="mf-item-rating">
+          <div class="mfi-rating-star"></div>
+          <div class="mfi-rating-text">рейтинг:9,2</div>
+        </div>
+      </div>
+      
+    </div>
+    </main>
+    <footer>
+      <div class="footer-hashtag">#Visitsedona</div>
+      <div class="footer-social">
+        <a class="fc-twiter" href="#"></a>
+        <a class="fc-facebook" href="#"></a>
+        <a class="fc-youtube" href="#"></a>        
+      </div>
+      <div class="footer-make"></div>
+    </footer>
+  <!--Скрипты сайта-->
+  </body>
+</html>
