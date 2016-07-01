@@ -34,6 +34,31 @@ body {
     /*анимация*/
     /*разное*/
 }
+nav {
+  position: relative;
+}
+
+.logo-head {
+  position: absolute;
+  top: -70px;
+  left: 550px;
+  width: 100px;
+  height: 100px;
+  background-color: #81b3d2;
+  border-radius: 10px;
+  transform: rotate(45deg);
+}
+
+.logo-head-img {
+  position: absolute;
+  top: 46px;
+  right: -7px;
+  
+  width: 67px;
+  height: 56px;
+  background: url("../img/logo-head.png");
+  transform: rotate(-45deg);
+}
 
 .head-menu {
     list-style: none;
@@ -42,6 +67,12 @@ body {
 .head-menu li {
   display: inline-block;
   vertical-align: top;
+}
+
+.head-image {
+  width: 1200px;
+  height: 570px;
+  background: url("../img/intro.png");
 }
 
 .fivecause-h1 {
@@ -61,7 +92,7 @@ body {
 
 .fivecause-big {
   height: 256px;
-  background-color: yellow;
+  /*background-color: yellow;*/
 }
 .fivecause-text{
   background-color: #81b3d2;
@@ -70,27 +101,33 @@ body {
 .fivecause-one .fivecause-text {
   float: left;
   width: 400px;
-  
+  height: 100%;
 }
 
 .fivecause-one .fivecause-img {
   float: right;
- 
-  background-color: red;
+  width: 800px;
+  height: 256px;
+  background: url("../img/real-town.jpg");
+}
   
+
+.fivecause-two .fivecause-img {
+  float: left; 
+  width: 800px;
+  height: 256px;
+  background: url("../img/place-diablo.jpg");
+  /*background-color: orange;*/
 }
 
 .fivecause-two .fivecause-text {
   float: right;
   width: 400px;
+  height: 100%;
   
 }
 
-.fivecause-two .fivecause-img {
-  float: left;
- 
-  background-color: red; 
-}
+
 
 .main-list {
   list-style: none;
@@ -102,9 +139,10 @@ body {
   display: inline-block;
   width: 400px;
   margin: 0;
-  margin-left: -0.25em;
+  margin-left: -0.27em;
   padding: 0;
   vertical-align: top;
+  
 }
 
 .main-advice {
@@ -113,8 +151,10 @@ body {
 
 
 
-.fivecause-other {
+.fivacause-other {
   height: 255px;
+  background-color: #eeeeee;
+  
 }
 /* hotel.html */
 form {

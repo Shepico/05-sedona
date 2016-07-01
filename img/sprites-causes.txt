@@ -1,0 +1,23 @@
+.sprite-causes {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-causes-food {
+    width: 74px;
+    height: 70px;
+    background-position: -15px -15px;
+}
+
+.sprite-causes-home {
+    width: 75px;
+    height: 72px;
+    background-position: -119px -15px;
+}
+
+.sprite-causes-souvenir {
+    width: 64px;
+    height: 76px;
+    background-position: -224px -15px;
+}

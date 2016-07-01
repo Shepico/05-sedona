@@ -1,0 +1,47 @@
+.sprite-small {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-small-cheked-false {
+    width: 22px;
+    height: 22px;
+    background-position: -10px -10px;
+}
+
+.sprite-small-cheked-true {
+    width: 26px;
+    height: 22px;
+    background-position: -52px -10px;
+}
+
+.sprite-small-facebook {
+    width: 10px;
+    height: 19px;
+    background-position: -98px -10px;
+}
+
+.sprite-small-range {
+    width: 21px;
+    height: 23px;
+    background-position: -128px -10px;
+}
+
+.sprite-small-star {
+    width: 18px;
+    height: 17px;
+    background-position: -169px -10px;
+}
+
+.sprite-small-twet {
+    width: 17px;
+    height: 15px;
+    background-position: -207px -10px;
+}
+
+.sprite-small-youtube {
+    width: 20px;
+    height: 16px;
+    background-position: -244px -10px;
+}
