@@ -14,6 +14,59 @@ img {
 }
 /*КОНЕЦ Вспомогательны классы*/
 
+/*sprites*/
+.sprite-small {
+  display: block;
+  margin: auto;
+  background-image: url("../img/sprites-small.png");
+  background-repeat: no-repeat;
+    
+}
+
+.sprite-small-cheked-false {
+    width: 22px;
+    height: 22px;
+    background-position: -10px -10px;
+}
+
+.sprite-small-cheked-true {
+    width: 26px;
+    height: 22px;
+    background-position: -52px -10px;
+}
+
+.sprite-small-facebook {
+    width: 10px;
+    height: 19px;
+    background-position: -98px -10px;
+}
+
+.sprite-small-range {
+    width: 21px;
+    height: 23px;
+    background-position: -128px -10px;
+}
+
+.sprite-small-star {
+    width: 18px;
+    height: 17px;
+    background-position: -169px -10px;
+}
+
+.sprite-small-twet {
+    width: 17px;
+    height: 15px;
+    background-position: -207px -10px;
+}
+
+.sprite-small-youtube {
+    width: 20px;
+    height: 16px;
+    background-position: -244px -10px;
+}
+
+/*sprites end*/
+
 body {
     /*позиционирование*/
     /*блочная модель*/
@@ -36,6 +89,9 @@ body {
 }
 nav {
   position: relative;
+  width: 100%;
+  text-align: justify;
+  background-color: red;
 }
 
 .logo-head {
@@ -61,12 +117,14 @@ nav {
 }
 
 .head-menu {
-    list-style: none;
+  list-style: none;
+  text-align: justify;
 }
 
 .head-menu li {
   display: inline-block;
   vertical-align: top;
+  text-align: justify;
 }
 
 .head-image {
@@ -127,8 +185,6 @@ nav {
   
 }
 
-
-
 .main-list {
   list-style: none;
   margin: 0;
@@ -146,16 +202,142 @@ nav {
 }
 
 .main-advice {
-  height: 330px;
+  height: 270px;
+  margin-top: 60px;  
+  text-align: center;
 }
 
-
-
-.fivacause-other {
-  height: 255px;
-  background-color: #eeeeee;
+.advice-h2 {
   
 }
+
+.advice-text {
+  margin: 0 60px;
+  background-color: purple;
+}
+/*img*/
+.sprite-causes {
+    display: block;
+    margin: auto;
+    margin-bottom: 30px;
+    background-image: url("../img/sprites-causes.png");
+    background-repeat: no-repeat;
+    
+}
+
+.sprite-causes-food {
+    width: 74px;
+    height: 70px;
+    background-position: -15px -15px;
+}
+
+.sprite-causes-home {
+    width: 75px;
+    height: 72px;
+    background-position: -119px -15px;
+}
+
+.sprite-causes-souvenir {
+    width: 64px;
+    height: 76px;
+    background-position: -224px -15px;
+}
+/*img end*/
+
+.fivacause-other {
+  height: 205px;
+  padding-top: 50px;
+  text-align: center;
+  background-color: #eeeeee;
+}
+
+.fivacause-other li {
+
+}
+/* serch hotel*/
+.traveldate-image-map {
+  width: 100%;
+  height: 593px;
+  background: url("../img/map.jpg");
+}
+
+/* ПОДВАЛ */
+footer {
+  position: relative;
+  top: -120px;
+  /*z-index: 10;*/
+  width: 100%;
+  height: 120px;
+  opacity: 0.9;
+  background-color: #ffffff;
+}
+
+.footer {
+  display: inline-block;  
+  width: 400px;
+  height: 120px;
+  
+  vertical-align: top;  
+}
+.footer:not(:first-child) {
+  margin-left: -0.29em;
+  
+}
+
+.footer-hashtag {
+  margin: auto;
+  text-align: center;
+  background-color: orange;
+
+  
+}
+
+.footer-social {
+  text-align: center;
+  /*background-color: yellow;*/
+
+  
+}
+
+.fc-social {
+
+  display: inline-block;
+  width: 46px;
+  margin-top: 35px;
+  margin-left: 6px;
+  
+  vertical-align: top;
+  background-color: #81b3d2;
+  
+}
+
+.fc-twiter{
+  height: 32px;
+  padding-top: 16px;
+}
+
+.fc-facebook{
+  height: 34px;
+  padding-top: 14px;
+}
+
+.fc-youtube{
+  height: 32px;
+  padding-top: 16px;  
+}
+
+.fc-social::last-child{
+  margin-left: 0;
+}
+
+.footer-make {
+  background: url("../img/copyright.png") no-repeat center center;
+  /*background-color: lightgreen;*/
+}
+
+
+
+/*============================================*/
 /* hotel.html */
 form {
   
@@ -211,13 +393,3 @@ form {
     float: right;
 }
 
-/* ПОДВАЛ */
-footer {
-  height: 120px;
-  background-color: purple;
-}
-
-.footer {
-  display: inline-block;
-  vertical-align: top;
-}
