@@ -11,21 +11,25 @@
   </head>
   <body>
     <header>
-      <nav> 
-        <ul class="head-menu">
-          <li><a href="#">Информация</a></li>
-          <li><a href="#">Фото и видео</a></li>
-          <li><a href="#">Карта штата</a></li>
-          <li><a href="hotels.html">Гостиницы</a></li>
-        </ul>
-        <div class="logo-head"><div class="logo-head-img"></div><!--<img src="img/logo-head.png" width="67px" height="56px" alt="Sity of Sedona">--></div>
+      <nav class="clearfix"> 
+        <div class="left-item-nav">
+          <a href="#">Информация</a>
+          <a href="#">Фото и видео</a>
+        </div>
+        <div class="right-item-nav">
+          <a href="#">Карта штата</a>
+          <a href="hotels.html">Гостиницы</a>
+        </div>       
+        <div class="logo-head">
+          <div class="logo-head-img"></div><!--<img src="img/logo-head.png" width="67px" height="56px" alt="Sity of Sedona">-->
+        </div>
       </nav>          
     </header>
     <main>
-      <div class="head-image"></div>  
+      <div class="head-image"><!--<img src="img/intro.png" width="1200px" height="780px" alt="Welcome to Sedona">--></div>  
       <article class="main-fivecause">
-        <h1 class="fivecause-h1">Седона - небольшой городок в аризоне, заслуживающий большого внимания</h1>
-        <div class="fivecause-head">Рассмотрим 5 причин, по которым седона круче, чем гранд каньон</div>
+        <h1 class="fivecause-h1">Седона - небольшой городок в аризоне, заслуживающий большего!</h1>
+        <div class="fivecause-head">Рассмотрим 5 причин, по которым седона круче, чем гранд каньон!</div>
         <div class="fivecause-big fivecause-one clearfix">
           <div class="fivecause-text">
             <div class="fivecause-text-h2">Настоящий городок</div>
@@ -61,17 +65,17 @@
         </div>
         <ul class="fivacause-other main-list">
           <li>
-            <div class="advice-h2">Небольшая площадь</div>
+            <div class="advice-h2 fo-h2">Небольшая площадь</div>
             <div class="advice-number">- №3 -</div>
             <div class="advice-text">Все достопримечательности находятся близко</div>
           </li>
           <li>
-            <div class="advice-h2">Красивая дорога</div>
+            <div class="advice-h2 fo-h2">Красивая дорога</div>
             <div class="advice-number">- №4 -</div>
             <div class="advice-text">Ехать в седону из лас-вегаса совсем не скучно!</div>
           </li>
           <li>
-            <div class="advice-h2">Мало туристов</div>
+            <div class="advice-h2 fo-h2">Мало туристов</div>
             <div class="advice-number">- №5 -</div>
             <div class="advice-text">Большинство едет в гранд каньон и толпятся там</div>
           </li>
@@ -83,22 +87,7 @@
           Укажите предполагаемые даты поездки,<br>
           и мы покажем вам лучшие предложения гостиниц в седоне
         </div>  
-        <form name="trevel-date-user" action="#" method="post">
-          <div class="form-caption">Поиск гостницы в седоне</div>
-          <input type="date" name="tdu-date-begin">
-          <label for="tdu-date-begin">Дата заезда:</label>
-          
-          <input type="date" name="tdu-date-end">
-          <label for="tdu-date-begin">Дата выезда:</label>
-          
-          <input type="range" min="0" max="9" value="2" name="tdu-adult">
-          <label for="tdu-adult">Взрослые:</label>
-          
-          <input type="range" min="0" max="9" value="0" name="tdu-child">
-          <label for="tdu-child">Дети:</label>
-          
-          <button>найти</button>
-        </form>
+        <div class="form-caption">Поиск гостницы в седоне</div>
         <div class="traveldate-image-map"></div>
       </div>
     </main>
@@ -112,6 +101,24 @@
       </div>
       <div class="footer footer-make"></div>
     </footer>
+    <!-- скрытые изначально модули -->
+    <form class="not-visible" name="travel-date-user" action="#" method="post">
+          
+      <input type="date" name="tdu-date-begin">
+      <label for="tdu-date-begin">Дата заезда:</label>
+        
+      <input type="date" name="tdu-date-end">
+      <label for="tdu-date-begin">Дата выезда:</label>
+        
+      <input type="range" min="0" max="9" value="2" name="tdu-adult">
+      <label for="tdu-adult">Взрослые:</label>
+        
+      <input type="range" min="0" max="9" value="0" name="tdu-child">
+      <label for="tdu-child">Дети:</label>
+          
+      <button>найти</button>
+    </form>
   <!--Скрипты сайта-->
+    
   </body>
 </html>

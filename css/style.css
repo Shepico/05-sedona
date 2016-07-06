@@ -1,3 +1,23 @@
+
+/*шрифты*/
+ @font-face {
+    font-family: PTsans; /* Гарнитура шрифта */
+    src: local("PTsans"),
+      url("../fonts/ptsans.woff") format("woff2"),
+      url("../fonts/ptsans.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+ }  
+ 
+ @font-face {
+    font-family: PTsans; /* Гарнитура шрифта */
+    src: local("PTsans"),
+      url("../fonts/ptsansbold.woff2") format("woff2"),
+      url("../fonts/ptsansbold.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+ }  
+    
 /*вспомогательные классы*/
 
 /*чтобы картинки не уходили за границы*/
@@ -11,6 +31,10 @@ img {
     content: "";
     display: table;
     clear: both;
+}
+
+.not-visible {
+  display: none;
 }
 /*КОНЕЦ Вспомогательны классы*/
 
@@ -75,11 +99,12 @@ body {
     margin: auto;
     /*типографика*/
     
-    font-family: "Tahoma", sans-serif;
+    font-family: "PTsans", "Tahoma", sans-serif;
     font-size: 14px;
+    line-height: 21px;
     font-weight: normal;
     font-style: normal;
-    line-height: 18px;
+    
     /*оформление*/
     
     background-color: #ffffff;
@@ -89,34 +114,46 @@ body {
 }
 nav {
   position: relative;
-  width: 100%;
-  text-align: justify;
-  background-color: red;
+
+  height: 26px;
+  padding: 17px 73px;
+  /*background-color: red;*/
+}
+
+nav a {
+  display: inline-block;
+  width: 128px;
+  text-transform: uppercase;
+  font-weight: bold;
+  line-height: 26px;
+  text-decoration: none;
+  color: #000000;
 }
 
 .logo-head {
   position: absolute;
   top: -70px;
   left: 550px;
-  width: 100px;
-  height: 100px;
+  width: 125px;
+  height: 125px;
   background-color: #81b3d2;
   border-radius: 10px;
   transform: rotate(45deg);
+  
 }
 
 .logo-head-img {
   position: absolute;
-  top: 46px;
-  right: -7px;
+  top: 58px;
+  right: 5px;
   
   width: 67px;
   height: 56px;
   background: url("../img/logo-head.png");
-  transform: rotate(-45deg);
+  transform: rotate(-45deg);  
 }
 
-.head-menu {
+/*.head-menu {
   list-style: none;
   text-align: justify;
 }
@@ -125,26 +162,56 @@ nav {
   display: inline-block;
   vertical-align: top;
   text-align: justify;
+}*/
+
+.left-item-nav {
+  float:left;
+  /*background-color: yellow;*/
+}
+
+.left-item-nav a{
+  margin-right: 112px;  
+  text-align: left;
+  
+}
+
+.right-item-nav {
+  float:right;
+  /*background-color: green;*/
+}
+
+.right-item-nav a{
+  margin-left: 112px;  
+  text-align: right;
 }
 
 .head-image {
   width: 1200px;
-  height: 570px;
+  height: 570px;  
   background: url("../img/intro.png");
+  /*background-size: auto 95%;*/
+  
 }
 
 .fivecause-h1 {
   display: inline-block;
   max-width: 1200px;
   padding: 0 312px;
-  text-align: center;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
   text-transform: uppercase; 
+  text-align: center;
   vertical-align: top;
 }
 
 .fivecause-head {
   max-width: 1200px;
-  padding: 0 312px;
+  margin-bottom: 53px;
+  padding: 0 312px;  
+  font-size: 14px;
+  line-height: 26px;
+  text-transform: uppercase; 
   text-align: center;
 }
 
@@ -152,14 +219,29 @@ nav {
   height: 256px;
   /*background-color: yellow;*/
 }
-.fivecause-text{
-  background-color: #81b3d2;
+.fivecause-text{  
+  width: 280px;
+  height: 146px;
+  padding: 55px 60px;
+  text-transform: uppercase; 
+  text-align: center;
+  color: #ffffff;  
+  background-color: #81b3d2;    
+}
+
+.fivecause-text-h2 {  
+  padding: 0 80px;
+  font-weight: bold;
+  
+}
+
+.fivecause-text-number {
+  margin: 28px 0;
 }
 
 .fivecause-one .fivecause-text {
   float: left;
-  width: 400px;
-  height: 100%;
+  
 }
 
 .fivecause-one .fivecause-img {
@@ -179,12 +261,9 @@ nav {
 }
 
 .fivecause-two .fivecause-text {
-  float: right;
-  width: 400px;
-  height: 100%;
-  
+  float: right;  
 }
-
+/**/
 .main-list {
   list-style: none;
   margin: 0;
@@ -208,18 +287,31 @@ nav {
 }
 
 .advice-h2 {
-  
+  text-transform: uppercase;
+  line-height: 82px;
+  font-weight: bold;
 }
 
 .advice-text {
   margin: 0 60px;
-  background-color: purple;
+  text-transform: uppercase;
+  /*background-color: purple;*/
+}
+
+.fo-h2 {
+  padding: 0 160px;
+  line-height: 21px;
+  /*text-align: center;*/
+}
+
+.advice-number {
+  margin: 30px 0;
 }
 /*img*/
 .sprite-causes {
     display: block;
     margin: auto;
-    margin-bottom: 30px;
+    /*margin-bottom: 30px;*/
     background-image: url("../img/sprites-causes.png");
     background-repeat: no-repeat;
     
@@ -255,6 +347,37 @@ nav {
 
 }
 /* serch hotel*/
+.main-traveldate {
+  text-transform: uppercase;
+  line-height: 24px;
+  text-align: center;
+}
+
+.traveldate-h2{
+  margin-top: 24px;
+  font-size: 32px;
+  line-height: 100px;
+  font-weight: bold;
+}
+
+.traveldate-text {
+  text-align: center;
+}
+
+.form-caption {
+  width: 570px;
+  height: 86px;
+  margin: auto;
+  margin-top: 55px;
+  font-size: 21px;
+  line-height: 86px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #766357; 
+}
+
 .traveldate-image-map {
   width: 100%;
   height: 593px;
@@ -286,10 +409,12 @@ footer {
 
 .footer-hashtag {
   margin: auto;
+  font-size: 21px;
+  line-height: 120px;
+  font-weight: bold;
   text-align: center;
-  background-color: orange;
-
-  
+  text-transform: uppercase;
+ /* background-color: orange;*/  
 }
 
 .footer-social {
