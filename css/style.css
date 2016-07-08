@@ -416,13 +416,15 @@ nav a {
 
 /* ПОДВАЛ */
 footer {
-  position: relative;
-  top: -120px;
-  /*z-index: 10;*/
   width: 100%;
   height: 120px;
-  opacity: 0.9;
   background-color: #ffffff;
+}
+
+.footer-index {
+  position: relative;
+  top: -120px;
+  opacity: 0.9; 
 }
 
 .footer {
@@ -495,6 +497,33 @@ footer {
 form {
   
 }
+
+.main-filter {
+  height: 220px;
+  color: #ffffff;
+  background-color: #7ea2c2;
+  background: url("../img/filter_bg.jpg") no-repeat;
+}
+
+.main-filter legend {
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: bold;
+}
+
+.main-found-head{
+  height: 87px;
+}
+
+.main-found-item {
+  height: 151px;
+}
+
+.main-found-item:nth-child(even){
+  border-top: 1px solid #000000;
+  border-bottom: 1px solid #000000;  
+}
+
 .mf-group {
   display: inline-block;
   vertical-align: top;
@@ -545,4 +574,5 @@ form {
 .mf-item-rating {
     float: right;
 }
+
 
