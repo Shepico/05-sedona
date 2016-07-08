@@ -109,13 +109,14 @@ body {
     
     background-color: #ffffff;
     color: #000000;
+    box-shadow: 0px 0px 20px 0px #eeeeee, 0px 0px 20px 0px #eeeeee;
     /*анимация*/
     /*разное*/
 }
 nav {
   position: relative;
 
-  height: 26px;
+  height: 21px;
   padding: 17px 73px;
   /*background-color: red;*/
 }
@@ -125,7 +126,7 @@ nav a {
   width: 128px;
   text-transform: uppercase;
   font-weight: bold;
-  line-height: 26px;
+  line-height: 21px;
   text-decoration: none;
   color: #000000;
 }
@@ -133,9 +134,9 @@ nav a {
 .logo-head {
   position: absolute;
   top: -70px;
-  left: 550px;
-  width: 125px;
-  height: 125px;
+  left: 548px;
+  width: 110px;
+  height: 120px;
   background-color: #81b3d2;
   border-radius: 10px;
   transform: rotate(45deg);
@@ -144,8 +145,8 @@ nav a {
 
 .logo-head-img {
   position: absolute;
-  top: 58px;
-  right: 5px;
+  top: 60px;
+  right: -1px;
   
   width: 67px;
   height: 56px;
@@ -187,8 +188,9 @@ nav a {
 
 .head-image {
   width: 1200px;
-  height: 570px;  
+  height: 555px;  
   background: url("../img/intro.png");
+  background-position: 0 -55px;
   /*background-size: auto 95%;*/
   
 }
@@ -196,6 +198,7 @@ nav a {
 .fivecause-h1 {
   display: inline-block;
   max-width: 1200px;
+  margin-bottom: 25px;
   padding: 0 312px;
   font-size: 21px;
   line-height: 26px;
@@ -230,13 +233,14 @@ nav a {
 }
 
 .fivecause-text-h2 {  
-  padding: 0 80px;
+  padding: 0 63px;
+  font-size: 21px;
   font-weight: bold;
   
 }
 
 .fivecause-text-number {
-  margin: 28px 0;
+  margin: 22px 0;
 }
 
 .fivecause-one .fivecause-text {
@@ -282,70 +286,94 @@ nav a {
 
 .main-advice {
   height: 270px;
-  margin-top: 60px;  
+  margin: 0;
+  padding: 0;
+  margin-top: 55px;  
+  margin-bottom: 3px;
   text-align: center;
+  /*background-color: green;*/
 }
 
+
 .advice-h2 {
+  margin: 3px 0;
   text-transform: uppercase;
-  line-height: 82px;
+  font-size: 21px;
+  line-height: 65px;
   font-weight: bold;
+  /*background-color: red;*/
 }
 
 .advice-text {
-  margin: 0 60px;
+  margin: 0 55px;
+  
   text-transform: uppercase;
+  
   /*background-color: purple;*/
 }
-
-.fo-h2 {
-  padding: 0 160px;
-  line-height: 21px;
-  /*text-align: center;*/
-}
-
 .advice-number {
   margin: 30px 0;
 }
+
+.fo-h2 {
+  margin: 0;
+  padding: 0 130px;
+  line-height: 21px;
+  
+  text-align: center;
+  /*background-color: red;*/
+}
+
+.fo-number {
+  margin-top: 23px;
+  margin-bottom: 22px;
+  padding: 0;  
+}
+
+
 /*img*/
 .sprite-causes {
     display: block;
     margin: auto;
     /*margin-bottom: 30px;*/
     background-image: url("../img/sprites-causes.png");
-    background-repeat: no-repeat;
+    background-repeat: no-repeat;    
     
-}
-
-.sprite-causes-food {
-    width: 74px;
-    height: 70px;
-    background-position: -15px -15px;
 }
 
 .sprite-causes-home {
     width: 75px;
     height: 72px;
-    background-position: -119px -15px;
+    background-position: -115px -12px;
+}
+
+.sprite-causes-food {
+    width: 74px;
+    height: 70px;
+    background-position: -12px -11px;
 }
 
 .sprite-causes-souvenir {
     width: 64px;
     height: 76px;
-    background-position: -224px -15px;
+    background-position: -215px -14px;
+}
+
+.advice-img{
+  width: 80px;
+  height: 80px;
+  /*background-color: yellow;*/
 }
 /*img end*/
 
 .fivacause-other {
   height: 205px;
-  padding-top: 50px;
+  padding-top: 48px;
+  padding-bottom: 5px;
   text-align: center;
   background-color: #eeeeee;
 }
 
-.fivacause-other li {
-
-}
 /* serch hotel*/
 .main-traveldate {
   text-transform: uppercase;
@@ -354,21 +382,23 @@ nav a {
 }
 
 .traveldate-h2{
-  margin-top: 24px;
-  font-size: 32px;
-  line-height: 100px;
+  margin-top: 50px;
+  font-size: 30px;
+  line-height: 37px;
   font-weight: bold;
 }
 
 .traveldate-text {
+  font-size: 16px;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .form-caption {
   width: 570px;
   height: 86px;
   margin: auto;
-  margin-top: 55px;
+  margin-top: 50px;
   font-size: 21px;
   line-height: 86px;
   font-weight: bold;
@@ -425,25 +455,23 @@ footer {
 }
 
 .fc-social {
-
   display: inline-block;
   width: 46px;
-  margin-top: 35px;
-  margin-left: 6px;
-  
+  margin-top: 36px;
+  margin-right: 2px;  
   vertical-align: top;
   background-color: #81b3d2;
   
 }
 
 .fc-twiter{
-  height: 32px;
-  padding-top: 16px;
+  height: 31px;
+  padding-top: 17px;
 }
 
 .fc-facebook{
-  height: 34px;
-  padding-top: 14px;
+  height: 35px;
+  padding-top: 13px;
 }
 
 .fc-youtube{
