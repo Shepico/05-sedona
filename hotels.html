@@ -30,52 +30,59 @@
       <fieldset class="mf-group mf-infrastructure"> 
         <legend>Инфрраструктура:</legend>
         
-        <input type="checkbox" name="mfi-pool" checked>
+        <input type="checkbox" id="mfi-pool" name="mfi-pool" checked>
         <label for="mfi-pool">Бассейн</label>
         
-        <input type="checkbox" name="mfi-parking">
+        
+        <input type="checkbox" id="mfi-parking" name="mfi-parking">
         <label for="mfi-parking">Парковка</label>
         
-        <input type="checkbox" name="mfi-wifi">
+        <input type="checkbox" id="mfi-wifi" name="mfi-wifi">
         <label for="mfi-wifi">Wi-fi</label>        
       </fieldset>     
       
       <fieldset class="mf-group mf-housingtype"> 
         <legend>Тип жилья:</legend>
         
-        <input type="checkbox" name="mfi-hotel" checked>
+        <input type="checkbox" id="mfi-hotel" name="mfi-hotel" checked>
         <label for="mfi-hotel">Гостиница</label>
         
-        <input type="checkbox" name="mfi-motel" checked>
+        <input type="checkbox" id="mfi-motel" name="mfi-motel" checked>
         <label for="mfi-motel">Мотель</label>
         
-        <input type="checkbox" name="mfi-apartment" checked>
+        <input type="checkbox" id="mfi-apartment" name="mfi-apartment" checked>
         <label for="mfi-apartment">Апартаменты</label>        
       </fieldset>     
       
       <fieldset class="mf-group mf-other"> 
         <legend>Стоимость в сутки (р):</legend>
-        <input type="text" name="mfi-number-min">
-        <input type="text" name="mfi-number-max">        
+        <div class="mf-other-minmax">
+          <input class="mf-other-min" type="text" name="mfi-number-min" value="от 0">
+          <input class="mf-other-max" type="text" name="mfi-number-max" value="до 3000">        
+        </div>  
         
-        <input type="range" min="0" max="5000" value="3000" name="mfi-costday">        
-        <button>Показать</button>
+        <input class="mf-other-range" type="range" min="0" max="5000" value="3000" id="mfi-costday" name="mfi-costday">        
+        <label class="mf-other-range-label" for="mfi-costday"></label>
+        
+        <a href="#" class="btn-mf-other-show">Показать</a>
       </fieldset>          
     </form>
     <div class="main-found">
       <div class="main-found-head">
-        <span class="mf-found-item mf-inline-block">Найдено:3</span>
+        <span class="mf-found-item mf-inline-block">Найдено: <b class="count-search">3</span>
         <div class="mf-sorting mf-inline-block">
           Сортировка:
           <ul class="mf-sorting-list">
-            <li>По цене</li>
+            <li class="active-filter">По цене</li>
             <li>По типу</li>
             <li>По рейтингу</li>            
           </ul>          
         </div> 
         <div class="mf-topdown mf-inline-block">    
-          <button class="btn-sort btn-sort-up">Вверх</button>
-          <button class="btn-sort btn-sort-down">Вниз</button>
+          <div class="btn-triangle btn-triangle-up"></div>
+          <div class="btn-triangle btn-triangle-down"></div>
+          <!--<button class="btn-sort btn-sort-up">Вверх</button>
+          <button class="btn-sort btn-sort-down">Вниз</button>-->
         </div>
       
       </div>
@@ -94,7 +101,7 @@
           </div>
         </div>
         <div class="mf-item-rating">
-          <div class="mfi-rating-star"></div>
+          <div class="mfi-rating-star star-four"></div>
           <div class="mfi-rating-text">рейтинг:8,5</div>
         </div>
       </div>
@@ -113,7 +120,7 @@
           </div>
         </div>
         <div class="mf-item-rating">
-          <div class="mfi-rating-star"></div>
+          <div class="mfi-rating-star star-two"></div>
           <div class="mfi-rating-text">рейтинг:8,9</div>
         </div>
       </div>
@@ -131,8 +138,8 @@
             <a href="#" class="btn-hotel mfit-reserve">Забронировать</a>
           </div>
         </div>
-        <div class="mf-item-rating">
-          <div class="mfi-rating-star sprite-small sprite-small-star villas-star"></div>
+        <div class="mf-item-rating clearfix">
+          <div class="mfi-rating-star star-three"></div>
           <div class="mfi-rating-text">рейтинг:9,2</div>
         </div>
       </div>
