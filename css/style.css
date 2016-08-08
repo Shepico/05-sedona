@@ -113,6 +113,7 @@ body {
     /*анимация*/
     /*разное*/
 }
+
 nav {
   position: relative;
 
@@ -141,6 +142,10 @@ nav a {
   border-radius: 10px;
   transform: rotate(45deg);
   
+}
+.logo-head-img-link {
+  display: block;
+  text-decoration: none;
 }
 
 .logo-head-img {
@@ -395,6 +400,7 @@ nav a {
 }
 
 .form-caption {
+  position:relative;
   width: 570px;
   height: 86px;
   margin: auto;
@@ -930,4 +936,52 @@ li.active-filter {
   text-align: center;  
   color: #8b8b8b;
   background-color: #f2f2f2;
+}
+/***********************
+@media (max-width: 1199px) {}
+  .form-search-hotel{
+  
+  }
+}
+
+@media (min-width: 1200px) {}
+  .form-search-hotel{
+  
+  }
+}
+*/
+.form-search-hotel {
+  position: absolute;
+  top: 86px;
+  left: 0;
+  width: 570px;
+  height: 395px;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  background-color: #ffffff;
+  color: #000000;
+  
+}
+.form-search-hotel fieldset {
+  border: none;
+}
+
+.form-search-hotel button {
+  width: 460px;
+  height: 60px;
+  margin: 0;
+  padding: 0;
+  line-height: 60px; 
+  text-transform: uppercase;
+  background-color: #81b3d2;
+  color: #ffffff;
+  border: none;
+}
+
+
+.form-search-hotel input[type="date"] {
+  /*display: block;*/
+  width: 344px;
+  height: 38px;
 }

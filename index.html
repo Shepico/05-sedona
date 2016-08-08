@@ -87,7 +87,26 @@
           Укажите предполагаемые даты поездки,<br>
           и мы покажем вам лучшие предложения гостиниц в седоне
         </div>  
-        <div class="form-caption">Поиск гостницы в седоне</div>
+        <div class="form-caption">Поиск гостницы в седоне
+           <!-- скрытые изначально модули not-visible -->
+          <form class="form-search-hotel " name="travel-date-user" action="#" method="post">
+            <fieldset>    
+              <label for="tdu-date-begin">Дата заезда:</label>
+              <input type="date" name="tdu-date-begin">
+              
+              <label for="tdu-date-begin">Дата выезда:</label>  
+              <input type="date" name="tdu-date-end">              
+                
+              <input type="range" min="0" max="9" value="2" name="tdu-adult">
+              <label for="tdu-adult">Взрослые:</label>
+                
+              <input type="range" min="0" max="9" value="0" name="tdu-child">
+              <label for="tdu-child">Дети:</label>
+                  
+              <button>найти</button>
+            </fieldset>    
+          </form>
+        </div>
         <div class="traveldate-image-map"></div>
       </div>
     </main>
@@ -101,23 +120,7 @@
       </div>
       <div class="footer footer-make"></div>
     </footer>
-    <!-- скрытые изначально модули -->
-    <form class="not-visible" name="travel-date-user" action="#" method="post">
-          
-      <input type="date" name="tdu-date-begin">
-      <label for="tdu-date-begin">Дата заезда:</label>
-        
-      <input type="date" name="tdu-date-end">
-      <label for="tdu-date-begin">Дата выезда:</label>
-        
-      <input type="range" min="0" max="9" value="2" name="tdu-adult">
-      <label for="tdu-adult">Взрослые:</label>
-        
-      <input type="range" min="0" max="9" value="0" name="tdu-child">
-      <label for="tdu-child">Дети:</label>
-          
-      <button>найти</button>
-    </form>
+   
   <!--Скрипты сайта-->
     
   </body>
