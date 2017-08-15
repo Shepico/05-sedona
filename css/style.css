@@ -26,6 +26,11 @@ img {
     height: auto;
 }
 
+/*Убираем браузерную обводку у элементов*/
+:active, :hover, :focus {
+    outline: 0;
+    outline-offset: 0;
+}
 /*Класс для того, чтобы контейнер float разметки "видел" их */
 .clearfix::after {
     content: "";
@@ -36,6 +41,8 @@ img {
 .not-visible {
   display: none;
 }
+
+
 /*КОНЕЦ Вспомогательны классы*/
 
 /*sprites*/
@@ -189,6 +196,30 @@ nav a {
 .right-item-nav a{
   margin-left: 112px;  
   text-align: right;
+}
+
+.active-item-nav{
+  color: #766357;  
+}
+
+.left-item-nav a:hover,
+.right-item-nav a:hover {
+  color: #81b3d2;
+}
+
+.left-item-nav >.active-item-nav:hover,
+.right-item-nav>.active-item-nav:hover{
+  color: #604e43;  
+}
+
+.left-item-nav a:active,
+.right-item-nav a:active {
+  color: #b7b7b7;
+}
+
+.left-item-nav >.active-item-nav:active,
+.right-item-nav>.active-item-nav:active{
+  color: #d8d3d0;;  
 }
 
 .head-image {
@@ -381,6 +412,8 @@ nav a {
 
 /* serch hotel*/
 .main-traveldate {
+  
+  
   text-transform: uppercase;
   line-height: 24px;
   text-align: center;
@@ -458,7 +491,6 @@ footer {
 .footer-social {
   text-align: center;
   /*background-color: yellow;*/
-
   
 }
 
@@ -491,11 +523,22 @@ footer {
   margin-left: 0;
 }
 
+.fc-twiter:hover,
+.fc-youtube:hover, 
+.fc-facebook:hover{
+  background-color: #669ec0;
+}
+
+.fc-twiter:active,
+.fc-youtube:active,
+.fc-facebook:active {
+  /*color: #88b6d1;*/
+  background-color: #5496bd;  
+}
 .footer-make {
   background: url("../img/copyright.png") no-repeat center center;
   /*background-color: lightgreen;*/
 }
-
 
 
 /*============================================*/
@@ -599,6 +642,7 @@ input[type=checkbox]:checked + label::before {
   border-right: 2px solid #ffffff; 
 }
 
+
 /*.mf-other-range {
   /*float: right;
   display: block;
@@ -655,6 +699,12 @@ input[type=checkbox]:checked + label::before {
 .range-controls .max-toggle {
     left: 265px;
 }
+
+.min-toggle:hover,
+.max-toggle:hover {
+  background-color: #1c4f80;
+}
+
 /*range end*/
 
 /*.mf-other-range-label {
@@ -679,6 +729,11 @@ input[type=checkbox]:checked + label::before {
   color: #ffffff;
   border: 2px solid #ffffff;
   border-radius: 2px;
+}
+
+.btn-mf-other-show:hover {
+  color: #000000;
+   background-color: #ffffff;
 }
 
 /*.sprite-small {
@@ -771,6 +826,15 @@ li.active-filter {
   border: none;
 }
 
+.mf-sorting-list li:hover {
+  color: #81b3d2;
+}
+
+.mf-sorting-list li:active {
+  color: #000000;
+  border: none;
+} 
+
 .mf-topdown {
   display: inline-block; 
   width: 241px;  
@@ -789,7 +853,7 @@ li.active-filter {
 }
 
 .btn-triangle-up {
-  border-color: #ffffff #ffffff #81b3d2 #ffffff;
+  border-color: #ffffff #ffffff #cccccc #ffffff;
   border-width: 0 5px 9px 5px;
   cursor: pointer;  
 }
@@ -798,6 +862,24 @@ li.active-filter {
   border-color: #81b3d2 #ffffff #ffffff #ffffff;
   border-width: 9px 5px 0 5px;  
   cursor: pointer;
+}
+
+.btn-triangle-up:hover {
+  border-color: #ffffff #ffffff #000000 #ffffff;  
+}
+
+.btn-triangle-down:hover {
+  border-color: #000000 #ffffff #ffffff #ffffff;
+  
+}
+
+.btn-triangle-up:active {
+  border-color: #ffffff #ffffff #81b3d2 #ffffff;  
+}
+
+.btn-triangle-down:active {
+  border-color: #81b3d2 #ffffff #ffffff #ffffff;
+  
 }
 /**/
 .main-found-item{
@@ -852,6 +934,15 @@ li.active-filter {
   /*text-transform: uppercase;*/
 }
 
+.mfit-h2:hover {
+  color: #81b3d2;
+  cursor: pointer;
+}
+
+.mfit-h2:active {
+  color: #b2b2b2;
+}
+
 .mfit-content {
   margin-bottom: 14px;
   /*text-transform: uppercase;*/
@@ -880,10 +971,28 @@ li.active-filter {
   color: #ffffff;
   background-color: #81b3d2;
 }
+.mfit-more:hover {
+  background-color: #669ec0;
+}
+
+.mfit-more:active {
+  color: #88b6d1;
+  background-color: #5496bd;
+}
+
 
 .mfit-reserve {
   width: 142px;
   background-color: #766357;
+}
+
+.mfit-reserve:hover {
+  background-color: #604e43;
+}
+
+.mfit-reserve:active {
+  color: #857871;
+  background-color: #503e33;
 }
 
 .mfi-rating-star {
@@ -985,3 +1094,9 @@ li.active-filter {
   width: 344px;
   height: 38px;
 }
+
+/*.form-search-hotel input[type="date"]:active:focus{
+   outline: none !important;
+   border: 5px;
+
+}*/
