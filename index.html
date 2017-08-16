@@ -87,21 +87,57 @@
           Укажите предполагаемые даты поездки,<br>
           и мы покажем вам лучшие предложения гостиниц в седоне
         </div>  
-        <div class="form-caption">Поиск гостницы в седоне 
+        <div class="form-caption" id="search-hotel">Поиск гостницы в седоне 
            <!-- скрытые изначально модули not-visible -->
-          <form class="form-search-hotel" name="travel-date-user" action="#" method="post">
+          <form class="form-search-hotel not-visible" id="search-hotel-form-id" name="travel-date-user" action="#" method="post">
             <fieldset>    
               <label for="tdu-date-begin">Дата заезда:</label>
-              <input type="date" name="tdu-date-begin">
+              <input type="date" name="tdu-date-begin" value="2016-06-24">
               
               <label for="tdu-date-begin">Дата выезда:</label>  
-              <input type="date" name="tdu-date-end">              
+              <input type="date" name="tdu-date-end" value="2016-07-04">              
                 
-              <input type="range" min="0" max="9" value="2" name="tdu-adult">
-              <label for="tdu-adult">Взрослые:</label>
-                
-              <input type="range" min="0" max="9" value="0" name="tdu-child">
-              <label for="tdu-child">Дети:</label>          
+              <div class="form-search-hotel_people">
+                <div class="form-search-hotel_people_adult">
+                  <label for="tdu-adult">Взрослые:</label>
+                  <div class="form-search-hotel_people_adult_count">
+                    <a class="icon-minus"></a>
+                    <input type="text" min="0" max="9" value="2" name="tdu-adult">
+                    <a class="icon-plus"></a>
+                  </div>                  
+                </div>
+              
+                <div class="form-search-hotel_people_children">
+                  <label for="tdu-child">Дети:</label>              
+                  <div class="form-search-hotel_people_children_count">                  
+                  <a class="icon-minus"></a>
+                    <input type="text" min="0" max="9" value="0" name="tdu-child">
+                  <a class="icon-plus"></a>  
+                </div>
+              </div> 
+              <!--<div class="form-search-hotel_wrapper-peoples">
+                <div class="search-hotel_adult-block">
+                  <label class="search-hotel_label" for="tdu-adult">Взрослые:</label>
+                  <div class="hotel-search__counter">
+                    <a href="#" class="icon-minus"></a>
+                    <input type="text" name="tdu-adult" value="2">
+                    <a href="#" class="icon-plus"></a>
+                  </div>
+                </div>
+
+              <!--<div class="hotel-search__children-block">
+                <label class="hotel-search__label" for="children-count">Дети:</label>
+                <div class="hotel-search__counter">
+                  <a href="" class="hotel-search__form-btn hotel-search__form-btn--minus">
+                    <svg version="1" xmlns="http://www.w3.org/2000/svg" width="9.917" height="1.917" viewBox="0 0 9.917 1.917"><path d="M0 0h9.917v1.917h-9.917z"/></svg>
+                  </a>
+                  <input class="hotel-search__input" type="text" name="children-count" id="children-count" value="0">
+                  <a href="" class="hotel-search__form-btn hotel-search__form-btn--plus">
+                    <svg version="1" xmlns="http://www.w3.org/2000/svg" width="9.917" height="9.917" viewBox="0 0 9.917 9.917"><path d="M9.917 4h-4v-4h-1.917v4h-4v1.917h4v4h1.917v-4h4z"/></svg>
+                  </a>
+                </div>
+              </div>
+              </div>-->
                   
               <button>найти</button>
             </fieldset>    
@@ -124,6 +160,6 @@
     </footer>
    
   <!--Скрипты сайта-->
-    
+  <script src="js/script.js"></script>  
   </body>
 </html>
