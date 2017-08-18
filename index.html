@@ -5,9 +5,9 @@
     <title>Sedona</title>
     <link rel="stylesheet" href="css/normalize.min.css">
     
-    <link rel="stylesheet" href="css/style.css">
+    <!--<link rel="stylesheet" href="css/style.css">-->
     <!--Разкоментиовать когда будет готов минимальный файл-->
-    <!--<link rel="stylesheet" href="css/style.min.css">-->
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
     <header>
@@ -21,12 +21,12 @@
           <a href="hotels.html">Гостиницы</a>
         </div>       
         <div class="logo-head">
-          <div class="logo-head-img"></div><!--<img src="img/logo-head.png" width="67px" height="56px" alt="Sity of Sedona">-->
+          <div class="logo-head-img"></div>
         </div>
       </nav>          
     </header>
     <main>
-      <div class="head-image"><!--<img src="img/intro.png" width="1200px" height="780px" alt="Welcome to Sedona">--></div>  
+      <div class="head-image"></div>  
       <article class="main-fivecause">
         <h1 class="fivecause-h1">Седона - небольшой городок в аризоне, заслуживающий большего!</h1>
         <div class="fivecause-head">Рассмотрим 5 причин, по которым седона круче, чем гранд каньон!</div>
@@ -82,70 +82,49 @@
         </ul>
       </article>
       <div class="main-traveldate">
-        <h2 class="traveldate-h2">Заинтересовались?</div>
+        <h2 class="traveldate-h2">Заинтересовались?</h2>
         <div class="traveldate-text">
           Укажите предполагаемые даты поездки,<br>
           и мы покажем вам лучшие предложения гостиниц в седоне
         </div>  
-        <div class="form-caption" id="search-hotel">Поиск гостницы в седоне 
+        <div class="form-caption" id="search-hotel">Поиск гостницы в Cедоне 
            <!-- скрытые изначально модули not-visible -->
           <form class="form-search-hotel not-visible" id="search-hotel-form-id" name="travel-date-user" action="#" method="post">
             <fieldset>    
-              <label for="tdu-date-begin">Дата заезда:</label>
+              <label>Дата заезда:</label>
               <input type="date" name="tdu-date-begin" value="2016-06-24">
               
-              <label for="tdu-date-begin">Дата выезда:</label>  
+              
+              <label>Дата выезда:</label>  
               <input type="date" name="tdu-date-end" value="2016-07-04">              
                 
               <div class="form-search-hotel_people">
                 <div class="form-search-hotel_people_adult">
-                  <label for="tdu-adult">Взрослые:</label>
+                  <label>Взрослые:</label>
                   <div class="form-search-hotel_people_adult_count">
                     <a class="icon-minus"></a>
-                    <input type="text" min="0" max="9" value="2" name="tdu-adult">
+                    <input type="text" value="2" name="tdu-adult">
                     <a class="icon-plus"></a>
                   </div>                  
                 </div>
               
+              
                 <div class="form-search-hotel_people_children">
-                  <label for="tdu-child">Дети:</label>              
+                  <label>Дети:</label>              
                   <div class="form-search-hotel_people_children_count">                  
                   <a class="icon-minus"></a>
-                    <input type="text" min="0" max="9" value="0" name="tdu-child">
+                    <input type="text" value="0" name="tdu-child">
                   <a class="icon-plus"></a>  
                 </div>
               </div> 
-              <!--<div class="form-search-hotel_wrapper-peoples">
-                <div class="search-hotel_adult-block">
-                  <label class="search-hotel_label" for="tdu-adult">Взрослые:</label>
-                  <div class="hotel-search__counter">
-                    <a href="#" class="icon-minus"></a>
-                    <input type="text" name="tdu-adult" value="2">
-                    <a href="#" class="icon-plus"></a>
-                  </div>
-                </div>
-
-              <!--<div class="hotel-search__children-block">
-                <label class="hotel-search__label" for="children-count">Дети:</label>
-                <div class="hotel-search__counter">
-                  <a href="" class="hotel-search__form-btn hotel-search__form-btn--minus">
-                    <svg version="1" xmlns="http://www.w3.org/2000/svg" width="9.917" height="1.917" viewBox="0 0 9.917 1.917"><path d="M0 0h9.917v1.917h-9.917z"/></svg>
-                  </a>
-                  <input class="hotel-search__input" type="text" name="children-count" id="children-count" value="0">
-                  <a href="" class="hotel-search__form-btn hotel-search__form-btn--plus">
-                    <svg version="1" xmlns="http://www.w3.org/2000/svg" width="9.917" height="9.917" viewBox="0 0 9.917 9.917"><path d="M9.917 4h-4v-4h-1.917v4h-4v1.917h4v4h1.917v-4h4z"/></svg>
-                  </a>
-                </div>
-              </div>
-              </div>-->
-                  
+              </div>  
               <button>найти</button>
             </fieldset>    
           </form>
         </div>
         <div class="traveldate-image-map"> 
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52385.13562588632!2d-111.83015792986895!3d34.854443865313165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1470729259443" width="1200" height="593" frameborder="0" style="border:0" allowfullscreen></iframe>
-        </div>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52385.13562588632!2d-111.83015792986895!3d34.854443865313165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1470729259443" height="593" style="border:0" allowfullscreen></iframe>
+        </div>        
       </div>
     </main>
     <footer class="footer-index">
